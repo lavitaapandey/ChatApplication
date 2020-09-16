@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  chatapplication:
+    image: ${DOCKER_REGISTRY-}chatapplication
+    build:
+      context: .
+      dockerfile: ChatApplication/Dockerfile
